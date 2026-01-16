@@ -60,4 +60,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Simple console log to verify load
     console.log('Locy UI Loaded - Material Intelligence Active');
+
+    // =========================================
+    // Multi-language Support (Google Translate)
+    // =========================================
+    const languageSelector = document.querySelector('.language-selector');
+
+    if (languageSelector) {
+        // Clear existing static content
+        languageSelector.innerHTML = '<div id="google_translate_element"></div>';
+
+        // Define the initialization function globally
+        window.googleTranslateElementInit = function () {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
+        };
+
+        // Inject the Google Translate Script
+        const script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+        document.body.appendChild(script);
+    }
 });
