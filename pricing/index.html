@@ -87,25 +87,43 @@
                 Locy
                 <span class="material-symbols-outlined verified-badge" title="Official Infrastructure">verified</span>
             </a>
-            <div class="nav-links">
-                <a href="/product" class="nav-link">Product</a>
-
-                <div class="dropdown">
-                    <button class="nav-link dropbtn">Solutions <span class="material-symbols-outlined"
-                            style="font-size: 18px;">expand_more</span></button>
+            <!-- Desktop Links -->
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Solutions</a>
                     <div class="dropdown-content">
                         <a href="/use-cases/restaurants">Restaurants</a>
                         <a href="/use-cases/ecommerce">E-Commerce</a>
-                        <a href="/use-cases/emergency">Emergency</a>
+                        <a href="/use-cases/emergency">Emergency Services</a>
                     </div>
-                </div>
+                </li>
+                <li><a href="/product">Product</a></li>
+                <li><a href="/pricing">Pricing</a></li>
+                <li><a href="/company">Company</a></li>
+            </ul>
 
-                <a href="/pricing" class="nav-link" style="color: var(--text-primary);">Pricing</a>
-                <a href="/company" class="nav-link">Company</a>
-            </div>
+            <!-- Hamburger Button -->
+            <button class="hamburger-btn" aria-label="Toggle Menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
             <a href="https://wa.me/message/CKI47NUPUXIQN1" class="btn btn-primary btn-whatsapp">Try on WhatsApp</a>
         </div>
     </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <div class="mobile-nav-links">
+            <a href="/product" class="mobile-nav-link">Product</a>
+            <a href="/pricing" class="mobile-nav-link">Pricing</a>
+            <a href="/use-cases/restaurants" class="mobile-nav-link">Restaurants</a>
+            <a href="/use-cases/ecommerce" class="mobile-nav-link">E-Commerce</a>
+            <a href="/use-cases/emergency" class="mobile-nav-link">Emergency</a>
+            <a href="/company" class="mobile-nav-link">Company</a>
+            <a href="https://wa.me/message/CKI47NUPUXIQN1" class="mobile-nav-link">Contact</a>
+        </div>
+    </div>
 
     <!-- Header -->
     <section class="hero" style="min-height: 50vh; padding-top: 140px; padding-bottom: 60px;">
