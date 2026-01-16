@@ -61,4 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Simple console log to verify load
     console.log('Locy UI Loaded - Material Intelligence Active');
 
+});
+
 
