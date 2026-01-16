@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locy for Emergency Services | Seconds Save Lives</title>
+    <meta name="description"
+        content="When seconds count, don't guess the building entrance. Locy guides first responders to the exact door.">
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .hero {
+            background: linear-gradient(135deg, #f8fafc 0%, #fff 100%);
+        }
+
+        .text-gradient-alert {
+            background: linear-gradient(135deg, #ef4444, #f97316);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                Locy
+                <span class="material-symbols-outlined verified-badge" title="Official Infrastructure">verified</span>
+            </a>
+            <div class="nav-links">
+                <a href="../product.html" class="nav-link">Product</a>
+
+                <div class="dropdown">
+                    <button class="nav-link dropbtn">Solutions <span class="material-symbols-outlined"
+                            style="font-size: 18px;">expand_more</span></button>
+                    <div class="dropdown-content">
+                        <a href="restaurants.html">Restaurants</a>
+                        <a href="ecommerce.html">E-Commerce</a>
+                        <a href="emergency.html">Emergency</a>
+                    </div>
+                </div>
+
+                <a href="../pricing.html" class="nav-link">Pricing</a>
+                <a href="../company.html" class="nav-link">Company</a>
+            </div>
+            <a href="https://wa.me/message/CKI47NUPUXIQN1" class="btn btn-primary btn-whatsapp">Try on WhatsApp</a>
+        </div>
+    </nav>
+
+    <section class="hero" style="min-height: 70vh; padding-top: 140px;">
+        <div class="container text-center">
+            <h5 class="fade-in-up" style="color: #ef4444;">EMERGENCY RESPONSE</h5>
+            <h1 class="fade-in-up">
+                When seconds <br>
+                <span class="text-gradient-alert">count.</span>
+            </h1>
+            <p class="fade-in-up" style="max-width: 600px; margin: 24px auto 32px;">
+                GPS says "You have arrived". But the entrance is 200m away around the block. Locy guides you to the
+                exact door.
+            </p>
+            <div class="hero-actions fade-in-up">
+                <a href="https://wa.me/message/CKI47NUPUXIQN1" class="btn btn-primary btn-whatsapp"
+                    style="background: #ef4444;">
+                    Deploy Pilot
+                </a>
+            </div>
+
+            <!-- Hero Illustration -->
+            <div class="fade-in-up" style="margin-top: 60px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                <img src="../assets/illustration_emergency.svg" alt="Target Radar"
+                    style="width: 100%; height: auto; filter: drop-shadow(0 20px 40px rgba(239, 68, 68, 0.2));">
+            </div>
+        </div>
+        <canvas id="radarCanvas"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; opacity: 0.4;"></canvas>
+    </section>
+
+    <!-- Content -->
+    <section class="section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="card fade-in-up">
+                    <span class="material-symbols-outlined"
+                        style="font-size: 40px; color: #ef4444; margin-bottom: 24px;">church</span>
+                    <!-- Hospital/Cross alternate -->
+                    <h3>Exact Entrance</h3>
+                    <p>Map pins drop in the center of the building. We drop them at the active door.</p>
+                </div>
+                <div class="card fade-in-up" style="transition-delay: 0.1s;">
+                    <span class="material-symbols-outlined"
+                        style="font-size: 40px; color: #ef4444; margin-bottom: 24px;">share_location</span>
+                    <h3>Dispatcher Link</h3>
+                    <p>Dispatchers can send a "Locy Link" to the caller to instantly verify their location via WhatsApp.
+                    </p>
+                </div>
+                <div class="card fade-in-up" style="transition-delay: 0.2s;">
+                    <span class="material-symbols-outlined"
+                        style="font-size: 40px; color: #ef4444; margin-bottom: 24px;">offline_bolt</span>
+                    <h3>Offline First</h3>
+                    <p>Works on low-bandwidth networks where data-heavy map apps fail.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Steps -->
+    <section class="steps-section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 60px;">
+                <h2 class="fade-in-up">Response Protocol</h2>
+            </div>
+            <!-- Matched Index Workflow Structure -->
+            <div class="steps-container theme-red">
+                <div class="step-item fade-in-up">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Send Link</h3>
+                        <p>Dispatcher sends Locy Link.</p>
+                    </div>
+                </div>
+
+                <div class="step-item fade-in-up">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>One Click</h3>
+                        <p>Caller taps. GPS captured.</p>
+                    </div>
+                </div>
+
+                <div class="step-item fade-in-up">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Found</h3>
+                        <p>Route to practical entrance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cross-Links (Explore) -->
+    <section class="section" style="background-color: var(--bg-subtle); padding: 60px 0;">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 40px;">
+                <h5>EXPLORE OTHER SOLUTIONS</h5>
+            </div>
+            <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                <a href="restaurants.html" class="card fade-in-up"
+                    style="text-decoration: none; color: inherit; display: block;">
+                    <div class="card-icon"><span class="material-symbols-outlined"
+                            style="color: #e11d48;">restaurant</span></div>
+                    <h3>Restaurants</h3>
+                    <p style="margin: 0; color: var(--text-secondary);">Hot food, cold logic.</p>
+                </a>
+                <a href="ecommerce.html" class="card fade-in-up"
+                    style="text-decoration: none; color: inherit; display: block; transition-delay: 0.1s;">
+                    <div class="card-icon"><span class="material-symbols-outlined"
+                            style="color: #06b6d4;">local_shipping</span></div>
+                    <h3>E-Commerce</h3>
+                    <p style="margin: 0; color: var(--text-secondary);">First-time delivery rates.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <!-- Pre-Footer CTA -->
+    <section class="container" style="margin-bottom: 80px;">
+        <div class="cta-box fade-in-up">
+            <h2 class="display-medium">Ready to speed up deliveries?</h2>
+            <p class="body-large" style="max-width: 600px; margin: 0 auto 32px;">Save 30 seconds per delivery. No credit
+                card required.</p>
+            <a href="https://wa.me/message/CKI47NUPUXIQN1" class="btn btn-primary btn-whatsapp">
+                Try on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="../index.html" class="logo">
+                        Locy
+                        <span class="material-symbols-outlined verified-badge"
+                            title="Official Infrastructure">verified</span>
+                    </a>
+                    <p>The layer for last-mile logistics.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Menu</h4>
+                        <a href="../product.html">Product</a>
+                        <a href="../pricing.html">Pricing</a>
+                        <a href="../company.html">Company</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Legal</h4>
+                        <a href="../privacy.html">Privacy</a>
+                        <a href="../terms.html">Terms</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 <a href="https://thinkpoint.ee" target="_blank"
+                    style="color: inherit; text-decoration: none;">ThinkPoint OÜ</a>. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="../main.js"></script>
+    <script>
+        // Radar Pulse Effect
+        const canvas = document.getElementById('radarCanvas');
+        const ctx = canvas.getContext('2d');
+        let width, height;
+        const pulses = [];
+
+        function resizing() {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+        }
+
+        class Pulse {
+            constructor() {
+                this.x = width / 2;
+                this.y = height / 2.5; // Slightly up to match text centerish
+                this.size = 0;
+                this.maxSize = Math.max(width, height) * 0.7;
+                this.alpha = 1;
+                this.speed = 2;
+            }
+            update() {
+                this.size += this.speed;
+                this.alpha = 1 - (this.size / this.maxSize);
+            }
+            draw() {
+                if (this.alpha <= 0) return;
+                ctx.strokeStyle = `rgba(239, 68, 68, ${this.alpha * 0.5})`;
+                ctx.lineWidth = 2;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.stroke();
+            }
+        }
+
+        function initApp() {
+            resizing();
+            // Create a pulse every 2 seconds
+            setInterval(() => {
+                pulses.push(new Pulse());
+            }, 1500);
+            animLoop();
+        }
+
+        function animLoop() {
+            ctx.clearRect(0, 0, width, height);
+
+            // Remove dead pulses
+            for (let i = pulses.length - 1; i >= 0; i--) {
+                pulses[i].update();
+                if (pulses[i].alpha <= 0) {
+                    pulses.splice(i, 1);
+                } else {
+                    pulses[i].draw();
+                }
+            }
+            requestAnimationFrame(animLoop);
+        }
+        window.addEventListener('resize', resizing);
+        initApp();
+    </script>
+</body>
+
+</html>

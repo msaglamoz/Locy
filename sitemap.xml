@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://Locy.ai/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://Locy.ai/product.html</loc>
+        <lastmod>2026-01-16</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://Locy.ai/pricing.html</loc>
+        <lastmod>2026-01-16</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://Locy.ai/company.html</loc>
+        <lastmod>2026-01-16</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://Locy.ai/privacy.html</loc>
+        <lastmod>2026-01-16</lastmod>
+        <priority>0.50</priority>
+    </url>
+    <url>
+        <loc>https://Locy.ai/terms.html</loc>
+        <lastmod>2026-01-16</lastmod>
+        <priority>0.50</priority>
+    </url>
+</urlset>

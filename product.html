@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locy Product | Driver-First Logistics</title>
+    <meta name="description"
+        content="Multimodal AI for logistics. No app to install. Drivers verify coordinates via WhatsApp instantly.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Material Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                Locy
+                <span class="material-symbols-outlined verified-badge" title="Official Infrastructure">verified</span>
+            </a>
+            <div class="nav-links">
+                <a href="product.html" class="nav-link" style="color: var(--text-primary);">Product</a>
+
+                <!-- Dropdown -->
+                <div class="dropdown">
+                    <button class="nav-link dropbtn">Solutions <span class="material-symbols-outlined"
+                            style="font-size: 18px;">expand_more</span></button>
+                    <div class="dropdown-content">
+                        <a href="use-cases/restaurants.html">Restaurants</a>
+                        <a href="use-cases/ecommerce.html">E-Commerce</a>
+                        <a href="use-cases/emergency.html">Emergency</a>
+                    </div>
+                </div>
+
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="company.html" class="nav-link">Company</a>
+            </div>
+            <a href="https://wa.me/message/CKI47NUPUXIQN1" class="btn btn-primary btn-whatsapp">Try on WhatsApp</a>
+        </div>
+    </nav>
+
+    <!-- Product Hero -->
+    <section class="hero" style="min-height: 60vh; padding-top: 140px;">
+        <div class="container text-center">
+            <h5 class="fade-in-up">FOR DRIVERS & FLEETS</h5>
+            <h1 class="fade-in-up" style="max-width: 800px; margin: 0 auto;">
+                Stop Typing <span class="text-gradient">Addresses.</span>
+            </h1>
+            <p class="fade-in-up" style="max-width: 600px; margin: 24px auto 32px;">
+                The tool drivers love. Stop typing addresses manually. Just forward to WhatsApp. Verification in
+                milliseconds.
+            </p>
+            <div class="hero-actions fade-in-up">
+                <a href="https://wa.me/message/CKI47NUPUXIQN1" class="btn btn-primary btn-whatsapp">
+                    Try on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section A: Multimodal Logic -->
+    <section class="section" style="background-color: var(--bg-subtle);">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content fade-in-up">
+                    <div class="card-icon">
+                        <span class="material-symbols-outlined"
+                            style="font-size: 48px; color: var(--accent-purple);">view_in_ar</span>
+                    </div>
+                    <h2>Just Snap a Photo. <br>We Do the Rest.</h2>
+                    <p>
+                        Drivers shouldn't be data entry clerks. Locy reads even the messiest handwriting.
+                        <br><br>
+                        Our AI ingests manifests, notes, and labels, identifying specific delivery instructions
+                        automatically. You just drive.
+                    </p>
+                </div>
+
+                <!-- Visual Data Card (Human Readable) -->
+                <div class="card fade-in-up"
+                    style="padding: 32px; background: #0f172a; border: 1px solid #1e293b; min-height: 300px; display: flex; flex-direction: column; justify-content: center;">
+
+                    <!-- Result Header -->
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid #334155;">
+                        <span
+                            style="color: #94a3b8; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">Analysis
+                            Result</span>
+                        <span
+                            style="background: rgba(74, 222, 128, 0.1); color: #4ade80; padding: 4px 12px; border-radius: 12px; font-size: 0.75rem; font-weight: 600;">VERIFIED
+                            99.9%</span>
+                    </div>
+
+                    <!-- Data Field 1 -->
+                    <div style="margin-bottom: 20px;">
+                        <div style="color: #64748b; font-size: 0.8rem; margin-bottom: 4px;">Detected Address</div>
+                        <div style="color: #f8fafc; font-size: 1.1rem; font-weight: 500;">Narva mnt 5, Tallinn 10117
+                        </div>
+                    </div>
+
+                    <!-- Data Field 2 -->
+                    <div style="margin-bottom: 20px;">
+                        <div style="color: #64748b; font-size: 0.8rem; margin-bottom: 4px;">Coordinates</div>
+                        <div style="color: #60a5fa; font-size: 1.1rem; font-family: 'Inter', monospace;">59.4370,
+                            24.7536</div>
+                    </div>
+
+                    <!-- Data Field 3 -->
+                    <div>
+                        <div style="color: #64748b; font-size: 0.8rem; margin-bottom: 4px;">Context</div>
+                        <div style="display: flex; gap: 8px;">
+                            <span
+                                style="background: #1e293b; color: #cbd5e1; padding: 4px 10px; border-radius: 6px; font-size: 0.8rem;">Commercial</span>
+                            <span
+                                style="background: #1e293b; color: #cbd5e1; padding: 4px 10px; border-radius: 6px; font-size: 0.8rem;">Main
+                                Entrance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section B: Geocoding & Routing -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 80px;">
+                <h2>Pin-Point Verification.</h2>
+                <p>We don't guess. We verify.</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Geocoding -->
+                <div class="card fade-in-up">
+                    <span class="material-symbols-outlined"
+                        style="font-size: 40px; color: var(--accent-cyan); margin-bottom: 24px;">pin_drop</span>
+                    <h3>Never Get Lost</h3>
+                    <p>Addresses are cross-referenced against geospatial grids. We return verified Latitude/Longitude
+                        coordinates so you go straight to the door.</p>
+                </div>
+
+                <!-- Routing -->
+                <div class="card fade-in-up" style="transition-delay: 0.1s;">
+                    <span class="material-symbols-outlined"
+                        style="font-size: 40px; color: var(--accent-blue); margin-bottom: 24px;">alt_route</span>
+                    <h3>Dynamic Sequencing</h3>
+                    <p>Submit 50 stops. Receive 1 optimal path. Finish your route faster with AI-optimized sequencing.
+                    </p>
+                </div>
+
+                <!-- API -->
+                <div class="card fade-in-up" style="transition-delay: 0.2s;">
+                    <span class="material-symbols-outlined"
+                        style="font-size: 40px; color: var(--accent-green); margin-bottom: 24px;">bolt</span>
+                    <h3>Instant Response</h3>
+                    <p>Built for speed. From image upload to route generation in under a second. No waiting at the curb.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-Footer CTA -->
+    <section class="container" style="margin-bottom: 80px;">
+        <div class="cta-box fade-in-up">
+            <h2 class="display-medium">Ready to start?</h2>
+            <p class="body-large" style="max-width: 600px; margin: 0 auto 32px;">
+                No credit card required. Start optimizing today.
+            </p>
+            <a href="https://wa.me/message/CKI47NUPUXIQN1" class="btn btn-primary btn-whatsapp">
+                Try on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        Locy
+                        <span class="material-symbols-outlined verified-badge"
+                            title="Official Infrastructure">verified</span>
+                    </a>
+                    <p>The layer for last-mile logistics.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Menu</h4>
+                        <a href="product.html">Product</a>
+                        <a href="pricing.html">Pricing</a>
+                        <a href="company.html">Company</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Legal</h4>
+                        <a href="privacy.html">Privacy</a>
+                        <a href="terms.html">Terms</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 <a href="https://thinkpoint.ee" target="_blank"
+                    style="color: inherit; text-decoration: none;">ThinkPoint OÜ</a>. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

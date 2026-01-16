@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locy for E-Commerce | First Time Right</title>
+    <meta name="description"
+        content="Eliminate 'Address Not Found' returns. Verify shipping addresses at the moment of capture.">
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .hero {
+            background: linear-gradient(135deg, #f0f9ff 0%, #fff 100%);
+        }
+
+        .text-gradient-cyan {
+            background: linear-gradient(135deg, #06b6d4, #3b82f6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                Locy
+                <span class="material-symbols-outlined verified-badge" title="Official Infrastructure">verified</span>
+            </a>
+            <div class="nav-links">
+                <a href="../product.html" class="nav-link">Product</a>
+
+                <div class="dropdown">
+                    <button class="nav-link dropbtn">Solutions <span class="material-symbols-outlined"
+                            style="font-size: 18px;">expand_more</span></button>
+                    <div class="dropdown-content">
+                        <a href="restaurants.html">Restaurants</a>
+                        <a href="ecommerce.html">E-Commerce</a>
+                        <a href="emergency.html">Emergency</a>
+                    </div>
+                </div>
+
+                <a href="../pricing.html" class="nav-link">Pricing</a>
+                <a href="../company.html" class="nav-link">Company</a>
+            </div>
+            <a href="https://wa.me/message/CKI47NUPUXIQN1" class="btn btn-primary btn-whatsapp">Try on WhatsApp</a>
+        </div>
+    </nav>
+
+    <section class="hero" style="min-height: 70vh; padding-top: 140px;">
+        <div class="container text-center">
+            <h5 class="fade-in-up" style="color: #06b6d4;">FOR E-COMMERCE</h5>
+            <h1 class="fade-in-up">
+                First time right. <br>
+                <span class="text-gradient-cyan">Zero returns.</span>
+            </h1>
+            <p class="fade-in-up" style="max-width: 600px; margin: 24px auto 32px;">
+                "Address Not Found" is a profit killer. Locy verifies the location before the truck leaves the depot.
+            </p>
+            <div class="hero-actions fade-in-up">
+                <a href="https://wa.me/message/CKI47NUPUXIQN1" class="btn btn-primary btn-whatsapp"
+                    style="background: #06b6d4;">
+                    Test Verification
+                </a>
+            </div>
+
+            <!-- Hero Illustration -->
+            <div class="fade-in-up" style="margin-top: 60px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                <img src="../assets/illustration_ecommerce.svg" alt="Barcode Verification"
+                    style="width: 100%; height: auto; filter: drop-shadow(0 20px 40px rgba(6, 182, 212, 0.2));">
+            </div>
+        </div>
+        <canvas id="streamCanvas"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; opacity: 0.5;"></canvas>
+    </section>
+
+    <!-- Content -->
+    <section class="section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="card fade-in-up">
+                    <span class="material-symbols-outlined"
+                        style="font-size: 40px; color: #06b6d4; margin-bottom: 24px;">inventory_2</span>
+                    <h3>Reduce Returns</h3>
+                    <p>Failed deliveries cost 3x shipping. Fix the address at the source.</p>
+                </div>
+                <div class="card fade-in-up" style="transition-delay: 0.1s;">
+                    <span class="material-symbols-outlined"
+                        style="font-size: 40px; color: #06b6d4; margin-bottom: 24px;">qr_code_scanner</span>
+                    <h3>Barcode Ready</h3>
+                    <p>Drivers scan the shipping label. Locy parses the barcode and verifies the geotag instantly.</p>
+                </div>
+                <div class="card fade-in-up" style="transition-delay: 0.2s;">
+                    <span class="material-symbols-outlined"
+                        style="font-size: 40px; color: #06b6d4; margin-bottom: 24px;">verified</span>
+                    <h3>Proof of Presence</h3>
+                    <p>Ensure the courier was actually at the door with GPS-stamped verification.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Steps -->
+    <section class="steps-section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 60px;">
+                <h2 class="fade-in-up">The Flow</h2>
+            </div>
+            <!-- Matched Index Workflow Structure -->
+            <div class="steps-container theme-cyan">
+                <div class="step-item fade-in-up">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Scan Label</h3>
+                        <p>Driver scans barcode with camera.</p>
+                    </div>
+                </div>
+
+                <div class="step-item fade-in-up">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Check Address</h3>
+                        <p>Deliverability verified instantly.</p>
+                    </div>
+                </div>
+
+                <div class="step-item fade-in-up">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Deliver</h3>
+                        <p>Navigate to verified entrance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cross-Links (Explore) -->
+    <section class="section" style="background-color: var(--bg-subtle); padding: 60px 0;">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 40px;">
+                <h5>EXPLORE OTHER SOLUTIONS</h5>
+            </div>
+            <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                <a href="restaurants.html" class="card fade-in-up"
+                    style="text-decoration: none; color: inherit; display: block;">
+                    <div class="card-icon"><span class="material-symbols-outlined"
+                            style="color: #e11d48;">restaurant</span></div>
+                    <h3>Restaurants</h3>
+                    <p style="margin: 0; color: var(--text-secondary);">Hot food, cold logic.</p>
+                </a>
+                <a href="emergency.html" class="card fade-in-up"
+                    style="text-decoration: none; color: inherit; display: block; transition-delay: 0.1s;">
+                    <div class="card-icon"><span class="material-symbols-outlined"
+                            style="color: #ef4444;">medical_services</span></div>
+                    <h3>Emergency</h3>
+                    <p style="margin: 0; color: var(--text-secondary);">Precision life-saving.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <!-- Pre-Footer CTA -->
+    <section class="container" style="margin-bottom: 80px;">
+        <div class="cta-box fade-in-up">
+            <h2 class="display-medium">Ready to speed up deliveries?</h2>
+            <p class="body-large" style="max-width: 600px; margin: 0 auto 32px;">Save 30 seconds per delivery. No credit
+                card required.</p>
+            <a href="https://wa.me/message/CKI47NUPUXIQN1" class="btn btn-primary btn-whatsapp">
+                Try on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="../index.html" class="logo">
+                        Locy
+                        <span class="material-symbols-outlined verified-badge"
+                            title="Official Infrastructure">verified</span>
+                    </a>
+                    <p>The layer for last-mile logistics.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Menu</h4>
+                        <a href="../product.html">Product</a>
+                        <a href="../pricing.html">Pricing</a>
+                        <a href="../company.html">Company</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Legal</h4>
+                        <a href="../privacy.html">Privacy</a>
+                        <a href="../terms.html">Terms</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 <a href="https://thinkpoint.ee" target="_blank"
+                    style="color: inherit; text-decoration: none;">ThinkPoint OÜ</a>. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="../main.js"></script>
+    <script>
+        // Matrix / Data Stream Effect
+        const canvas = document.getElementById('streamCanvas');
+        const ctx = canvas.getContext('2d');
+        let width, height;
+        const streams = [];
+
+        function resizing() {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+        }
+
+        class Stream {
+            constructor() {
+                this.x = Math.random() * width;
+                this.y = Math.random() * height;
+                this.speed = Math.random() * 3 + 2;
+                this.len = Math.random() * 20 + 10;
+                this.color = `rgba(6, 182, 212, ${Math.random() * 0.4})`;
+            }
+            update() {
+                this.y += this.speed;
+                if (this.y > height) this.y = -this.len;
+            }
+            draw() {
+                ctx.fillStyle = this.color;
+                ctx.fillRect(this.x, this.y, 2, this.len);
+            }
+        }
+
+        function initApp() {
+            resizing();
+            for (let i = 0; i < 80; i++) streams.push(new Stream());
+            animLoop();
+        }
+
+        function animLoop() {
+            ctx.clearRect(0, 0, width, height);
+            streams.forEach(s => {
+                s.update();
+                s.draw();
+            });
+            requestAnimationFrame(animLoop);
+        }
+        window.addEventListener('resize', resizing);
+        initApp();
+    </script>
+</body>
+
+</html>
