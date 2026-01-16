@@ -985,6 +985,15 @@ footer {
   cursor: default;
 }
 
+/* Visibility Utilities (Base) */
+.mobile-only-block {
+  display: none;
+}
+
+.desktop-only-block {
+  display: block;
+}
+
 /* Unified Mobile Breakpoint (900px) */
 @media (max-width: 900px) {
 
