@@ -233,12 +233,12 @@ a {
 /* Logo */
 .logo {
   font-family: 'Outfit', sans-serif;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 700;
   color: var(--text-primary);
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   letter-spacing: -0.03em;
   text-decoration: none;
 }
@@ -370,14 +370,17 @@ a {
 
 /* Standard background-clip */
 .verified-badge {
-  font-size: 24px;
+  font-size: 27px;
   background: var(--gradient-main);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Visual correction for vertical alignment */
+  transform: translateY(1px);
   cursor: help;
 }
 
