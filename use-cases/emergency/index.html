@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Locy for E-Commerce | First Time Right</title>
+    <title>Locy for Emergency Services | Seconds Save Lives</title>
     <meta name="description"
-        content="Eliminate 'Address Not Found' returns. Verify shipping addresses at the moment of capture.">
-    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+        content="When seconds count, don't guess the building entrance. Locy guides first responders to the exact door.">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,14 +15,14 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/style.css">
     <style>
         .hero {
-            background: linear-gradient(135deg, #f0f9ff 0%, #fff 100%);
+            background: linear-gradient(135deg, #f8fafc 0%, #fff 100%);
         }
 
-        .text-gradient-cyan {
-            background: linear-gradient(135deg, #06b6d4, #3b82f6);
+        .text-gradient-alert {
+            background: linear-gradient(135deg, #ef4444, #f97316);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -33,25 +33,25 @@
 <body>
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="../index.html" class="logo">
+            <a href="/" class="logo">
                 Locy
                 <span class="material-symbols-outlined verified-badge" title="Official Infrastructure">verified</span>
             </a>
             <div class="nav-links">
-                <a href="../product.html" class="nav-link">Product</a>
+                <a href="/product" class="nav-link">Product</a>
 
                 <div class="dropdown">
                     <button class="nav-link dropbtn">Solutions <span class="material-symbols-outlined"
                             style="font-size: 18px;">expand_more</span></button>
                     <div class="dropdown-content">
-                        <a href="restaurants.html">Restaurants</a>
-                        <a href="ecommerce.html">E-Commerce</a>
-                        <a href="emergency.html">Emergency</a>
+                        <a href="/use-cases/restaurants">Restaurants</a>
+                        <a href="/use-cases/ecommerce">E-Commerce</a>
+                        <a href="/use-cases/emergency">Emergency</a>
                     </div>
                 </div>
 
-                <a href="../pricing.html" class="nav-link">Pricing</a>
-                <a href="../company.html" class="nav-link">Company</a>
+                <a href="/pricing" class="nav-link">Pricing</a>
+                <a href="/company" class="nav-link">Company</a>
             </div>
             <a href="https://wa.me/message/CKI47NUPUXIQN1" class="btn btn-primary btn-whatsapp">Try on WhatsApp</a>
         </div>
@@ -59,29 +59,30 @@
 
     <section class="hero" style="min-height: 70vh; padding-top: 140px;">
         <div class="container text-center">
-            <h5 class="fade-in-up" style="color: #06b6d4;">FOR E-COMMERCE</h5>
+            <h5 class="fade-in-up" style="color: #ef4444;">EMERGENCY RESPONSE</h5>
             <h1 class="fade-in-up">
-                First time right. <br>
-                <span class="text-gradient-cyan">Zero returns.</span>
+                When seconds <br>
+                <span class="text-gradient-alert">count.</span>
             </h1>
             <p class="fade-in-up" style="max-width: 600px; margin: 24px auto 32px;">
-                "Address Not Found" is a profit killer. Locy verifies the location before the truck leaves the depot.
+                GPS says "You have arrived". But the entrance is 200m away around the block. Locy guides you to the
+                exact door.
             </p>
             <div class="hero-actions fade-in-up">
                 <a href="https://wa.me/message/CKI47NUPUXIQN1" class="btn btn-primary btn-whatsapp"
-                    style="background: #06b6d4;">
-                    Test Verification
+                    style="background: #ef4444;">
+                    Deploy Pilot
                 </a>
             </div>
 
             <!-- Hero Illustration -->
             <div class="fade-in-up" style="margin-top: 60px; max-width: 600px; margin-left: auto; margin-right: auto;">
-                <img src="../assets/illustration_ecommerce.svg" alt="Barcode Verification"
-                    style="width: 100%; height: auto; filter: drop-shadow(0 20px 40px rgba(6, 182, 212, 0.2));">
+                <img src="/assets/illustration_emergency.svg" alt="Target Radar"
+                    style="width: 100%; height: auto; filter: drop-shadow(0 20px 40px rgba(239, 68, 68, 0.2));">
             </div>
         </div>
-        <canvas id="streamCanvas"
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; opacity: 0.5;"></canvas>
+        <canvas id="radarCanvas"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; opacity: 0.4;"></canvas>
     </section>
 
     <!-- Content -->
@@ -90,21 +91,23 @@
             <div class="features-grid">
                 <div class="card fade-in-up">
                     <span class="material-symbols-outlined"
-                        style="font-size: 40px; color: #06b6d4; margin-bottom: 24px;">inventory_2</span>
-                    <h3>Reduce Returns</h3>
-                    <p>Failed deliveries cost 3x shipping. Fix the address at the source.</p>
+                        style="font-size: 40px; color: #ef4444; margin-bottom: 24px;">church</span>
+                    <!-- Hospital/Cross alternate -->
+                    <h3>Exact Entrance</h3>
+                    <p>Map pins drop in the center of the building. We drop them at the active door.</p>
                 </div>
                 <div class="card fade-in-up" style="transition-delay: 0.1s;">
                     <span class="material-symbols-outlined"
-                        style="font-size: 40px; color: #06b6d4; margin-bottom: 24px;">qr_code_scanner</span>
-                    <h3>Barcode Ready</h3>
-                    <p>Drivers scan the shipping label. Locy parses the barcode and verifies the geotag instantly.</p>
+                        style="font-size: 40px; color: #ef4444; margin-bottom: 24px;">share_location</span>
+                    <h3>Dispatcher Link</h3>
+                    <p>Dispatchers can send a "Locy Link" to the caller to instantly verify their location via WhatsApp.
+                    </p>
                 </div>
                 <div class="card fade-in-up" style="transition-delay: 0.2s;">
                     <span class="material-symbols-outlined"
-                        style="font-size: 40px; color: #06b6d4; margin-bottom: 24px;">verified</span>
-                    <h3>Proof of Presence</h3>
-                    <p>Ensure the courier was actually at the door with GPS-stamped verification.</p>
+                        style="font-size: 40px; color: #ef4444; margin-bottom: 24px;">offline_bolt</span>
+                    <h3>Offline First</h3>
+                    <p>Works on low-bandwidth networks where data-heavy map apps fail.</p>
                 </div>
             </div>
         </div>
@@ -114,31 +117,31 @@
     <section class="steps-section">
         <div class="container">
             <div class="text-center" style="margin-bottom: 60px;">
-                <h2 class="fade-in-up">The Flow</h2>
+                <h2 class="fade-in-up">Response Protocol</h2>
             </div>
             <!-- Matched Index Workflow Structure -->
-            <div class="steps-container theme-cyan">
+            <div class="steps-container theme-red">
                 <div class="step-item fade-in-up">
                     <div class="step-number">1</div>
                     <div class="step-content">
-                        <h3>Scan Label</h3>
-                        <p>Driver scans barcode with camera.</p>
+                        <h3>Send Link</h3>
+                        <p>Dispatcher sends Locy Link.</p>
                     </div>
                 </div>
 
                 <div class="step-item fade-in-up">
                     <div class="step-number">2</div>
                     <div class="step-content">
-                        <h3>Check Address</h3>
-                        <p>Deliverability verified instantly.</p>
+                        <h3>One Click</h3>
+                        <p>Caller taps. GPS captured.</p>
                     </div>
                 </div>
 
                 <div class="step-item fade-in-up">
                     <div class="step-number">3</div>
                     <div class="step-content">
-                        <h3>Deliver</h3>
-                        <p>Navigate to verified entrance.</p>
+                        <h3>Found</h3>
+                        <p>Route to practical entrance.</p>
                     </div>
                 </div>
             </div>
@@ -152,24 +155,23 @@
                 <h5>EXPLORE OTHER SOLUTIONS</h5>
             </div>
             <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
-                <a href="restaurants.html" class="card fade-in-up"
+                <a href="/use-cases/restaurants" class="card fade-in-up"
                     style="text-decoration: none; color: inherit; display: block;">
                     <div class="card-icon"><span class="material-symbols-outlined"
                             style="color: #e11d48;">restaurant</span></div>
                     <h3>Restaurants</h3>
                     <p style="margin: 0; color: var(--text-secondary);">Hot food, cold logic.</p>
                 </a>
-                <a href="emergency.html" class="card fade-in-up"
+                <a href="/use-cases/ecommerce" class="card fade-in-up"
                     style="text-decoration: none; color: inherit; display: block; transition-delay: 0.1s;">
                     <div class="card-icon"><span class="material-symbols-outlined"
-                            style="color: #ef4444;">medical_services</span></div>
-                    <h3>Emergency</h3>
-                    <p style="margin: 0; color: var(--text-secondary);">Precision life-saving.</p>
+                            style="color: #06b6d4;">local_shipping</span></div>
+                    <h3>E-Commerce</h3>
+                    <p style="margin: 0; color: var(--text-secondary);">First-time delivery rates.</p>
                 </a>
             </div>
         </div>
     </section>
-
     </section>
 
     <!-- Pre-Footer CTA -->
@@ -189,7 +191,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="../index.html" class="logo">
+                    <a href="/" class="logo">
                         Locy
                         <span class="material-symbols-outlined verified-badge"
                             title="Official Infrastructure">verified</span>
@@ -199,14 +201,14 @@
                 <div class="footer-links">
                     <div class="footer-col">
                         <h4>Menu</h4>
-                        <a href="../product.html">Product</a>
-                        <a href="../pricing.html">Pricing</a>
-                        <a href="../company.html">Company</a>
+                        <a href="/product">Product</a>
+                        <a href="/pricing">Pricing</a>
+                        <a href="/company">Company</a>
                     </div>
                     <div class="footer-col">
                         <h4>Legal</h4>
-                        <a href="../privacy.html">Privacy</a>
-                        <a href="../terms.html">Terms</a>
+                        <a href="/privacy">Privacy</a>
+                        <a href="/terms">Terms</a>
                     </div>
                 </div>
             </div>
@@ -217,49 +219,63 @@
         </div>
     </footer>
 
-    <script src="../main.js"></script>
+    <script src="/main.js"></script>
     <script>
-        // Matrix / Data Stream Effect
-        const canvas = document.getElementById('streamCanvas');
+        // Radar Pulse Effect
+        const canvas = document.getElementById('radarCanvas');
         const ctx = canvas.getContext('2d');
         let width, height;
-        const streams = [];
+        const pulses = [];
 
         function resizing() {
             width = canvas.width = window.innerWidth;
             height = canvas.height = window.innerHeight;
         }
 
-        class Stream {
+        class Pulse {
             constructor() {
-                this.x = Math.random() * width;
-                this.y = Math.random() * height;
-                this.speed = Math.random() * 3 + 2;
-                this.len = Math.random() * 20 + 10;
-                this.color = `rgba(6, 182, 212, ${Math.random() * 0.4})`;
+                this.x = width / 2;
+                this.y = height / 2.5; // Slightly up to match text centerish
+                this.size = 0;
+                this.maxSize = Math.max(width, height) * 0.7;
+                this.alpha = 1;
+                this.speed = 2;
             }
             update() {
-                this.y += this.speed;
-                if (this.y > height) this.y = -this.len;
+                this.size += this.speed;
+                this.alpha = 1 - (this.size / this.maxSize);
             }
             draw() {
-                ctx.fillStyle = this.color;
-                ctx.fillRect(this.x, this.y, 2, this.len);
+                if (this.alpha <= 0) return;
+                ctx.strokeStyle = `rgba(239, 68, 68, ${this.alpha * 0.5})`;
+                ctx.lineWidth = 2;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.stroke();
             }
         }
 
         function initApp() {
             resizing();
-            for (let i = 0; i < 80; i++) streams.push(new Stream());
+            // Create a pulse every 2 seconds
+            setInterval(() => {
+                pulses.push(new Pulse());
+            }, 1500);
             animLoop();
         }
 
         function animLoop() {
             ctx.clearRect(0, 0, width, height);
-            streams.forEach(s => {
-                s.update();
-                s.draw();
-            });
+
+            // Remove dead pulses
+            for (let i = pulses.length - 1; i >= 0; i--) {
+                pulses[i].update();
+                if (pulses[i].alpha <= 0) {
+                    pulses.splice(i, 1);
+                } else {
+                    pulses[i].draw();
+                }
+            }
             requestAnimationFrame(animLoop);
         }
         window.addEventListener('resize', resizing);
