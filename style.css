@@ -906,10 +906,7 @@ footer {
   background: #22c35e;
 }
 
-.footer-links {
-  /* Reset previous flex styles if any */
-  display: contents;
-}
+
 
 .footer-col h4 {
   font-family: 'Outfit', sans-serif;
