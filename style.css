@@ -221,6 +221,19 @@ a {
   position: relative;
 }
 
+/* Logo */
+.logo {
+  font-family: 'Outfit', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+}
+
 
 
 /* Hamburger Button */
