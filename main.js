@@ -70,12 +70,29 @@ document.addEventListener('DOMContentLoaded', () => {
         // Clear existing static content
         languageSelector.innerHTML = '<div id="google_translate_element"></div>';
 
+        // Auto-Detect Language and Set Cookie
+        function setCookie(key, value, expiry) {
+            var expires = new Date();
+            expires.setTime(expires.getTime() + (expiry * 24 * 60 * 60 * 1000));
+            document.cookie = key + '=' + value + ';expires=' + expires.toUTCString() + ';path=/';
+        }
+
+        // Check if cookie already exists
+        if (!document.cookie.split(';').some((item) => item.trim().startsWith('googtrans='))) {
+            const userLang = navigator.language || navigator.userLanguage;
+            const langCode = userLang ? userLang.split('-')[0] : 'en';
+
+            if (langCode !== 'en') {
+                setCookie('googtrans', '/en/' + langCode, 1);
+            }
+        }
+
         // Define the initialization function globally
         window.googleTranslateElementInit = function () {
             new google.translate.TranslateElement({
                 pageLanguage: 'en',
                 layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-                autoDisplay: false
+                autoDisplay: true
             }, 'google_translate_element');
         };
 
