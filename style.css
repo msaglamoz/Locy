@@ -233,7 +233,7 @@ a {
 /* Logo */
 .logo {
   font-family: 'Outfit', sans-serif;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 700;
   color: var(--text-primary);
   display: flex;
@@ -370,7 +370,7 @@ a {
 
 /* Standard background-clip */
 .verified-badge {
-  font-size: 27px;
+  font-size: 34px;
   background: var(--gradient-main);
   -webkit-background-clip: text;
   background-clip: text;
