@@ -1076,6 +1076,11 @@ footer {
     gap: 40px;
   }
 
+  .stat-grid {
+    flex-direction: column;
+    gap: 40px;
+  }
+
   /* Pricing Grid Base Definition if missing */
   .pricing-grid {
     display: grid;
