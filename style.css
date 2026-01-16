@@ -204,13 +204,21 @@ a {
 .navbar {
   position: fixed;
   top: 0;
+  left: 0;
+  /* Align to left edge */
   width: 100%;
   z-index: 3000;
-  /* Increased to sit above mobile overlay (2000) */
   background: transparent;
   border-bottom: 1px solid transparent;
   padding: 24px 0;
   transition: all 0.3s ease;
+}
+
+/* Hide Header CTA on Mobile to prevent layout shift */
+@media (max-width: 900px) {
+  .navbar .btn {
+    display: none !important;
+  }
 }
 
 /* ... existing styles ... */
