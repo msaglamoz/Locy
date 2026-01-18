@@ -150,6 +150,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Google Translate Integration
     const script = document.createElement('script');
     script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+    script.async = true;
+    script.defer = true;
     document.body.appendChild(script);
 
     window.googleTranslateElementInit = function () {
