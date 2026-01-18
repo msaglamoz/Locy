@@ -1243,10 +1243,11 @@ footer {
 
 .wa-header {
   background: #008069;
-  padding: 10px 16px;
+  padding: 10px 12px;
   display: flex;
   align-items: center;
   gap: 8px;
+  /* Reduced gap */
   color: white;
   min-height: 60px;
 }
