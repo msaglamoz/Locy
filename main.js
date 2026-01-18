@@ -58,6 +58,34 @@ document.addEventListener('DOMContentLoaded', () => {
     const animatedElements = document.querySelectorAll('.fade-in-up');
     animatedElements.forEach(el => observer.observe(el));
 
+    // Smart Copy Logic
+    const copyBtns = document.querySelectorAll('.btn-smart-copy');
+    copyBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const textToCopy = btn.getAttribute('data-copy');
+            const originalText = btn.querySelector('.btn-text').innerText;
+            const originalIcon = btn.querySelector('.btn-icon').innerText;
+
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                // Success Feedback
+                btn.classList.add('copied');
+                btn.querySelector('.btn-text').innerText = 'Email Copied!';
+                btn.querySelector('.btn-icon').innerText = 'check';
+
+                // Revert after 2 seconds
+                setTimeout(() => {
+                    btn.classList.remove('copied');
+                    btn.querySelector('.btn-text').innerText = originalText;
+                    btn.querySelector('.btn-icon').innerText = originalIcon;
+                }, 2000);
+            }).catch(err => {
+                // Fallback to mailto if copy fails
+                window.location.href = btn.href;
+            });
+        });
+    });
+
     // Simple console log to verify load
     console.log('Locy UI Loaded - Material Intelligence Active');
 
