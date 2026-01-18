@@ -147,50 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Google Translate Integration
-    const script = document.createElement('script');
-    script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
 
-    window.googleTranslateElementInit = function () {
-        new google.translate.TranslateElement({
-            pageLanguage: 'en',
-            includedLanguages: 'en,tr,de,fr,it,es,nl,pt,pl,ro,el,cs,ar',
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-            autoDisplay: false
-        }, 'google_translate_element');
-    };
-
-    // Bind Custom Select to Google Translate with Retry Logic
-    const customSelector = document.getElementById('custom-language-selector');
-    if (customSelector) {
-        customSelector.addEventListener('change', function () {
-            const lang = this.value;
-            const googleCombo = document.querySelector('.goog-te-combo');
-
-            if (googleCombo) {
-                // If loaded, trigger immediately
-                googleCombo.value = lang;
-                googleCombo.dispatchEvent(new Event('change'));
-            } else {
-                // If not loaded yet, retry a few times
-                console.log('Google Translate not ready, retrying...');
-                let attempts = 0;
-                const interval = setInterval(() => {
-                    const retryCombo = document.querySelector('.goog-te-combo');
-                    if (retryCombo) {
-                        retryCombo.value = lang;
-                        retryCombo.dispatchEvent(new Event('change'));
-                        clearInterval(interval);
-                    }
-                    attempts++;
-                    if (attempts > 10) clearInterval(interval); // Stop after 2 seconds
-                }, 200);
-            }
-        });
-    }
 
 });
 
