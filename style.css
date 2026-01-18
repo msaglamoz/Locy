@@ -494,9 +494,12 @@ a {
   font-family: 'Outfit', sans-serif;
 }
 
-.dropdown-content a:hover {
-  background-color: var(--bg-subtle);
-  color: var(--accent-blue);
+/* Show the dropdown menu on hover OR when active class is added (for touch) */
+.dropdown:hover .dropdown-content,
+.dropdown.active .dropdown-content {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .dropdown:hover .dropdown-content {
