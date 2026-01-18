@@ -102,6 +102,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Google Translate Logic - Prevent Icon Translation
+    // Adds 'notranslate' class to all Material Icons to prevent Google Translate from breaking them
+    const icons = document.querySelectorAll('.material-symbols-outlined');
+    icons.forEach(icon => {
+        icon.classList.add('notranslate');
+    });
+
     // Simple console log to verify load
     console.log('Locy UI Loaded - Material Intelligence Active');
 
