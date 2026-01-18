@@ -135,6 +135,18 @@ document.addEventListener('DOMContentLoaded', () => {
         icon.classList.add('notranslate');
     });
 
+    // Active Navigation State Logic
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll('.nav-links a, .mobile-nav-link');
+
+    navLinks.forEach(link => {
+        // Check if link href matches current path (considering root /)
+        const linkPath = link.getAttribute('href');
+        if (linkPath === currentPath || (linkPath === '/' && currentPath === '/index.html')) {
+            link.classList.add('active');
+        }
+    });
+
     // Simple console log to verify load
     console.log('Locy UI Loaded - Material Intelligence Active');
 

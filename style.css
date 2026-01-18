@@ -58,6 +58,19 @@
   box-sizing: border-box;
 }
 
+/* Global Accessibility Focus Ring */
+:focus-visible {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 2px;
+}
+
+/* Active Nav State */
+.nav-links a.active,
+.mobile-nav-link.active {
+  color: var(--accent-blue);
+  font-weight: 600;
+}
+
 body {
   background-color: var(--bg-color);
   color: var(--text-primary);
