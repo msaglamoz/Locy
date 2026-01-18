@@ -1206,28 +1206,30 @@ footer {
 
 /* The Glow sits on the wrapper */
 /* The Glow sits on the wrapper */
+/* Technical Dot Pattern Backdrop */
 .wa-mockup-wrapper::before {
   content: '';
   position: absolute;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
+  top: -24px;
+  left: -24px;
+  right: -24px;
+  bottom: -24px;
   width: auto;
   height: auto;
-  background: linear-gradient(135deg, #3b82f6, #8b5cf6, #06b6d4);
-  filter: blur(40px);
+  background-image: radial-gradient(#94a3b8 1px, transparent 1px);
+  background-size: 20px 20px;
   z-index: -1;
-  opacity: 0.4;
-  border-radius: 40px;
-  animation: pulseGlow 5s ease-in-out infinite;
+  opacity: 0.5;
+  border-radius: 32px;
+  /* No blur, no animation - just clean technical grid */
 }
 
 .wa-mockup {
   width: 100%;
   background: #FFFFFF;
   border-radius: 24px;
-  box-shadow: 0 24px 60px -12px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.05);
+  /* Deep Clean Shadow for separation */
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
   /* Frameless Shadow */
   overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
