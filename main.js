@@ -64,20 +64,36 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
             const textToCopy = btn.getAttribute('data-copy');
-            const originalText = btn.querySelector('.btn-text').innerText;
-            const originalIcon = btn.querySelector('.btn-icon').innerText;
+
+            // Check if button has structure (Hero) or is simple link (Footer)
+            const btnText = btn.querySelector('.btn-text');
+            const btnIcon = btn.querySelector('.btn-icon');
+
+            const originalText = btnText ? btnText.innerText : btn.innerText;
+            const originalIconContent = btnIcon ? btnIcon.innerText : '';
 
             navigator.clipboard.writeText(textToCopy).then(() => {
                 // Success Feedback
                 btn.classList.add('copied');
-                btn.querySelector('.btn-text').innerText = 'Email Copied!';
-                btn.querySelector('.btn-icon').innerText = 'check';
+
+                if (btnText && btnIcon) {
+                    // Complex Button Feedback
+                    btnText.innerText = 'Email Copied!';
+                    btnIcon.innerText = 'check';
+                } else {
+                    // Simple Link Feedback
+                    btn.innerText = 'Email Copied! ✓';
+                }
 
                 // Revert after 2 seconds
                 setTimeout(() => {
                     btn.classList.remove('copied');
-                    btn.querySelector('.btn-text').innerText = originalText;
-                    btn.querySelector('.btn-icon').innerText = originalIcon;
+                    if (btnText && btnIcon) {
+                        btnText.innerText = originalText;
+                        btnIcon.innerText = originalIconContent;
+                    } else {
+                        btn.innerText = originalText;
+                    }
                 }, 2000);
             }).catch(err => {
                 // Fallback to mailto if copy fails
