@@ -26,6 +26,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.body.style.overflow = '';
             });
         });
+
+        // Mobile Dropdown Logic (Solutions)
+        // Select the dropdown in mobile menu context if it exists, or bind to main nav dropdown if that's what's shown
+        // Since the current mobile menu is a separate overlay with flat links, we need to ensure 'Solutions' behaves correctly there.
+        // Looking at index.html, the mobile menu currently FLATTENS the structure:
+        // <a href="/use-cases/restaurants" class="mobile-nav-link">Restaurants</a>
+        // It does NOT have a collapsible "Solutions" item.
+        // User likely meant the DESKTOP menu when resized to mobile, OR they want a collapsible in the mobile menu.
+        // HOWEVER, the user said "Solutions menu... if it opens with hover on desktop -> make it touch on mobile".
+        // This implies they might be using a tablet where they see the desktop menu, OR they want the mobile overlay to have a hierarchy.
+        // Given the current mobile menu is flat (lines 78-83 in index.html), the "Solutions" parent doesn't exist there.
+        // I will assume they mean the Desktop Navbar behavior on Touch devices (Tablet/Hybrid).
+
+        const dropdowns = document.querySelectorAll('.dropdown');
+        dropdowns.forEach(dropdown => {
+            const dropbtn = dropdown.querySelector('.dropbtn');
+            if (dropbtn) {
+                dropbtn.addEventListener('click', (e) => {
+                    // On touch devices, prevent default link behavior and toggle
+                    if (window.innerWidth <= 1024) {
+                        e.preventDefault();
+                        dropdown.classList.toggle('active');
+                    }
+                });
+            }
+        });
     }
 
     // Scroll Effect (Navbar)
