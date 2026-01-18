@@ -634,25 +634,7 @@ a {
   border-top: 2px solid var(--card-border);
 }
 
-.step-number {
-  width: 56px;
-  height: 56px;
-  background-color: white;
-  /* 2D Flat Circle */
-  border: 1px solid var(--card-border);
-  color: var(--accent-blue);
-  border-radius: 50%;
-  font-family: 'Outfit', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: -28px;
-  left: 0;
-  /* No Shadow */
-}
+/* Conflict Resolved: Removed duplicate step-number style */
 
 /* Theme Colors for Workflows */
 .steps-container.theme-rose .step-number {
