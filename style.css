@@ -1207,6 +1207,38 @@ footer {
   border: none;
   position: relative;
   margin: 0 auto;
+  z-index: 1;
+  /* Sit above the glow */
+}
+
+/* Ambient Glow Effect */
+.wa-mockup::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 90%;
+  height: 80%;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6, #06b6d4);
+  filter: blur(50px);
+  z-index: -1;
+  opacity: 0.25;
+  border-radius: 50%;
+  animation: pulseGlow 5s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(0.95);
+  }
+
+  50% {
+    opacity: 0.3;
+    transform: scale(1.05);
+  }
 }
 
 .wa-header {
