@@ -245,6 +245,35 @@ a {
 
 
 
+/* Desktop Navigation */
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none !important;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+
+.nav-links li a:hover {
+  color: var(--accent-blue);
+}
+
+/* Hide Desktop Links on Mobile */
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+}
+
 /* Hamburger Button */
 .hamburger-btn {
   display: none;
