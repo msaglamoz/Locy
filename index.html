@@ -68,7 +68,8 @@
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
             </button>
-            <a href="https://wa.me/message/CKI47NUPUXIQN1" class="btn btn-primary btn-whatsapp">Try on WhatsApp</a>
+            <a href="https://wa.me/message/CKI47NUPUXIQN1" class="btn btn-primary btn-whatsapp" target="_blank">Try on
+                WhatsApp</a>
         </div>
     </nav>
 
@@ -256,7 +257,7 @@
                         <h4 style="margin-bottom: 8px;">Mobile Detected</h4>
                         <p style="font-size: 14px; margin-bottom: 24px;">Open directly in app.</p>
                         <a href="https://wa.me/message/CKI47NUPUXIQN1" class="btn btn-primary btn-whatsapp"
-                            style="width: 100%; justify-content: center;">
+                            style="width: 100%; justify-content: center;" target="_blank">
                             Start Chat
                         </a>
                     </div>
@@ -515,7 +516,7 @@
                             title="Official Infrastructure">verified</span>
                     </a>
                     <p>The layer for last-mile logistics. No app to install. Just results.</p>
-                    <a href="https://wa.me/message/CKI47NUPUXIQN1" class="btn-footer">
+                    <a href="https://wa.me/message/CKI47NUPUXIQN1" class="btn-footer" target="_blank">
                         <span class="material-symbols-outlined">chat</span>
                         Start Chat
                     </a>
@@ -576,6 +577,30 @@
                     English
                     <span class="material-symbols-outlined" style="font-size: 16px;">expand_more</span>
                 </div>
+                <!-- Language Selector -->
+                <div class="language-selector">
+                    <span class="material-symbols-outlined" style="font-size: 16px;">language</span>
+                    <select id="custom-language-selector"
+                        style="background: transparent; border: none; color: inherit; font-family: inherit; font-size: inherit; cursor: pointer; outline: none; -webkit-appearance: none; appearance: none;">
+                        <option value="en" selected>English (US/UK/CA)</option>
+                        <option value="tr">Türkçe</option>
+                        <option value="de">Deutsch (DE/CH)</option>
+                        <option value="fr">Français (FR/BE/CH)</option>
+                        <option value="it">Italiano</option>
+                        <option value="es">Español</option>
+                        <option value="nl">Nederlands (NL/BE)</option>
+                        <option value="pt">Português</option>
+                        <option value="pl">Polski</option>
+                        <option value="ro">Română</option>
+                        <option value="el">Ελληνικά</option>
+                        <option value="cs">Čeština</option>
+                        <option value="ar">العربية (UAE)</option>
+                    </select>
+                    <span class="material-symbols-outlined"
+                        style="font-size: 16px; pointer-events: none;">expand_more</span>
+                </div>
+                <!-- Google Translate Element (Hidden) -->
+                <div id="google_translate_element" style="display:none;"></div>
             </div>
         </div>
     </footer>
