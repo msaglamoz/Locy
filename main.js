@@ -161,15 +161,31 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 'google_translate_element');
     };
 
-    // Bind Custom Select to Google Translate
+    // Bind Custom Select to Google Translate with Retry Logic
     const customSelector = document.getElementById('custom-language-selector');
     if (customSelector) {
         customSelector.addEventListener('change', function () {
             const lang = this.value;
             const googleCombo = document.querySelector('.goog-te-combo');
+
             if (googleCombo) {
+                // If loaded, trigger immediately
                 googleCombo.value = lang;
                 googleCombo.dispatchEvent(new Event('change'));
+            } else {
+                // If not loaded yet, retry a few times
+                console.log('Google Translate not ready, retrying...');
+                let attempts = 0;
+                const interval = setInterval(() => {
+                    const retryCombo = document.querySelector('.goog-te-combo');
+                    if (retryCombo) {
+                        retryCombo.value = lang;
+                        retryCombo.dispatchEvent(new Event('change'));
+                        clearInterval(interval);
+                    }
+                    attempts++;
+                    if (attempts > 10) clearInterval(interval); // Stop after 2 seconds
+                }, 200);
             }
         });
     }

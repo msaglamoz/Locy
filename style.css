@@ -1656,12 +1656,12 @@ body {
 
 #google_translate_element {
   position: absolute;
-  /* Keep it technically inside the viewport but invisible */
-  bottom: 0;
-  right: 0;
   width: 1px;
   height: 1px;
   overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+  /* added line */
   opacity: 0;
   pointer-events: none;
   z-index: -1;
