@@ -1212,11 +1212,12 @@ footer {
 
 .wa-header {
   background: #008069;
-  padding: 16px 20px;
+  padding: 10px 16px;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   color: white;
+  min-height: 60px;
 }
 
 .wa-avatar {
