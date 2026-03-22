@@ -1474,3 +1474,24 @@ footer {
   border-radius: 4px;
   border: 1px solid #e2e8f0;
 }
+/* Language Switcher */
+.language-switcher {
+  background: transparent;
+  border: 1px solid var(--card-border);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s;
+}
+
+.language-switcher:hover {
+  border-color: var(--accent-blue);
+}
+
+.language-switcher option {
+  color: #000;
+}
