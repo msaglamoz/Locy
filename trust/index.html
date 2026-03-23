@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy | Locy</title>
+    <title>Trust Center | Locy</title>
     <!-- Same Head Setup -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -81,72 +81,103 @@
         </div>
     </div>
 
+    
     <section class="section" style="padding-top: 140px;">
-                <div class="container" style="max-width: 800px;">
-            <h1 data-i18n="priv_title">Privacy Policy</h1>
-            <p style="margin-top: 24px; color: var(--text-secondary);" data-i18n="priv_date">Last Updated: January 16, 2026</p>
+        <div class="container" style="max-width: 900px;">
+            <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
+                <span translate="no" class="material-symbols-outlined notranslate" style="color: var(--accent-green); font-size: 32px;">verified_user</span>
+                <h1 data-i18n="trust_title">Trust Center</h1>
+            </div>
+            <p style="color: var(--text-secondary); font-size: 1.1rem; max-width: 600px;" data-i18n="trust_desc">
+                Enterprise-grade security, compliance, and transparency.
+            </p>
 
-            <h3 style="margin-top: 48px;" data-i18n="priv_h1">1. Information We Collect</h3>
-            <ul style="color: var(--text-secondary); line-height: 1.6; padding-left: 20px; margin-bottom: 24px;">
-                <li data-i18n="priv_p1_1">We collect the absolute minimum data required to provide our location services.</li>
-                <li style="margin-top: 8px;" data-i18n="priv_p1_2">WhatsApp logs limited to metadata and phone numbers for routing context.</li>
-                <li style="margin-top: 8px;" data-i18n="priv_p1_3">Package images submitted strictly for real-time address extraction.</li>
-            </ul>
+            <div class="trust-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 32px;">
+                <!-- DPA Request -->
+                <div class="trust-card" style="background: var(--bg-subtle); padding: 24px; border-radius: 12px; border: 1px solid var(--border-color);">
+                    <h3 style="margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+                        <span translate="no" class="material-symbols-outlined notranslate" style="color: var(--accent-blue);">contract</span>
+                        <span data-i18n="trust_dpa_title">Data Processing Agreement</span>
+                    </h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 24px; font-size: 0.95rem;" data-i18n="trust_dpa_desc">
+                        Our standard DPA complies with GDPR and standard contractual clauses (SCCs). Request a countersigned copy for your procurement team.
+                    </p>
+                    <a href="mailto:legal@locy.ai?subject=DPA%20Request" class="btn btn-outlined">
+                        <span class="btn-text" data-i18n="trust_dpa_btn">Request DPA</span>
+                    </a>
+                </div>
 
-            <h3 style="margin-top: 32px;" data-i18n="priv_h2">2. Zero Retention Architecture</h3>
-            <p data-i18n="priv_p2_1">Locy operates strictly as a stateless processor by design.</p>
-            <p data-i18n="priv_p2_2">Images sent to our processing system are converted to coordinates and routing data, then immediately purged from volatile memory.</p>
-            
-            <h3 style="margin-top: 32px;" data-i18n="priv_h2_5">2.5 Data Categories & Retention</h3>
-            <div style="overflow-x:auto; margin-top: 16px;">
-                <table style="width: 100%; border-collapse: collapse; text-align: left; color: var(--text-secondary); font-size: 0.95rem;">
+                <!-- Compliance Pack -->
+                <div class="trust-card" style="background: var(--bg-subtle); padding: 24px; border-radius: 12px; border: 1px solid var(--border-color);">
+                    <h3 style="margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+                        <span translate="no" class="material-symbols-outlined notranslate" style="color: var(--accent-purple);">shield</span>
+                        <span data-i18n="trust_pack_title">Security & Compliance Pack</span>
+                    </h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 24px; font-size: 0.95rem;" data-i18n="trust_pack_desc">
+                        Download our comprehensive security architecture overview, penetration test summaries, and incident response SLAs.
+                    </p>
+                    <a href="javascript:void(0)" onclick="alert('PDF Download initiated');" class="btn btn-outlined">
+                        <span class="btn-text" data-i18n="trust_pack_btn">Download PDF</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Lifecycle Diagram -->
+            <h3 style="margin-top: 64px; margin-bottom: 16px;" data-i18n="trust_diag_title">Data Lifecycle Architecture</h3>
+            <div style="background: var(--bg-subtle); border: 1px solid var(--border-color); border-radius: 12px; padding: 32px; text-align: center; margin-bottom: 64px;">
+                <p style="color: var(--text-secondary); margin-bottom: 24px;" data-i18n="trust_diag_desc">
+                    Locy's stateless engine ensures zero-content retention. Watch how an image flows.
+                </p>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; align-items: center; max-width: 100%;">
+                    <div style="padding: 16px; background: #fff; border-radius: 8px; border: 1px solid #e2e8f0; color: #000; font-family: monospace; font-size: 14px;">1. Image Received<br>(WhatsApp / API)</div>
+                    <span translate="no" class="material-symbols-outlined notranslate" style="color: var(--accent-blue);">arrow_forward</span>
+                    <div style="padding: 16px; background: #fff; border-radius: 8px; border: 1px solid #e2e8f0; color: #000; font-family: monospace; font-size: 14px;">2. AI Processing<br>(Volatile RAM)</div>
+                    <span translate="no" class="material-symbols-outlined notranslate" style="color: var(--accent-purple);">arrow_forward</span>
+                    <div style="padding: 16px; background: #ecfdf5; border-radius: 8px; border: 1px solid #059669; color: #065f46; font-family: monospace; font-size: 14px; font-weight: bold;">3. Coordinate Returned</div>
+                    <span translate="no" class="material-symbols-outlined notranslate" style="color: var(--accent-green);">arrow_forward</span>
+                    <div style="padding: 16px; background: #fef2f2; border-radius: 8px; border: 1px solid #dc2626; color: #991b1b; font-family: monospace; font-size: 14px;">4. Image Purged<br>(0 seconds later)</div>
+                </div>
+            </div>
+
+            <!-- Subprocessors -->
+            <h3 style="margin-bottom: 16px;" data-i18n="trust_sub_title">Authorized Subprocessors</h3>
+            <p style="color: var(--text-secondary); max-width: 700px; margin-bottom: 16px;" data-i18n="trust_sub_desc">
+                To provide our services globally with low latency, we engage the following industry-leading infrastructure providers. All are bound by strict DPA and SCC agreements.
+            </p>
+            <div style="overflow-x:auto;">
+                <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem; text-align: left;">
                     <thead>
                         <tr style="border-bottom: 2px solid var(--border-color); color: var(--text-primary);">
-                            <th style="padding: 12px 8px;" data-i18n="priv_tab_cat">Data Category</th>
-                            <th style="padding: 12px 8px;" data-i18n="priv_tab_purp">Purpose</th>
-                            <th style="padding: 12px 8px;" data-i18n="priv_tab_ret">Retention Period</th>
+                            <th style="padding: 12px 8px;" data-i18n="trust_tab_entity">Entity Name</th>
+                            <th style="padding: 12px 8px;" data-i18n="trust_tab_purpose">Purpose</th>
+                            <th style="padding: 12px 8px;" data-i18n="trust_tab_location">Location</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody style="color: var(--text-secondary);">
                         <tr style="border-bottom: 1px solid var(--border-color);">
-                            <td style="padding: 12px 8px; color: var(--text-primary); font-weight: 500;" data-i18n="priv_tab_d1">Package Images</td>
-                            <td style="padding: 12px 8px;" data-i18n="priv_tab_p1">Coordinate extraction</td>
-                            <td style="padding: 12px 8px; font-weight: 600; color: var(--accent-green);" data-i18n="priv_tab_r1">0 Seconds (Purged instanly)</td>
+                            <td style="padding: 12px 8px;">Amazon Web Services EMEA SARL</td>
+                            <td style="padding: 12px 8px;" data-i18n="trust_tab_p1">Cloud Infrastructure & API Hosting</td>
+                            <td style="padding: 12px 8px;">EU (Frankfurt)</td>
                         </tr>
                         <tr style="border-bottom: 1px solid var(--border-color);">
-                            <td style="padding: 12px 8px; color: var(--text-primary); font-weight: 500;" data-i18n="priv_tab_d2">WhatsApp phone numbers</td>
-                            <td style="padding: 12px 8px;" data-i18n="priv_tab_p2">API routing & support</td>
-                            <td style="padding: 12px 8px;" data-i18n="priv_tab_r2">30 Days (System logs)</td>
+                            <td style="padding: 12px 8px;">Meta Platforms Ireland Limited</td>
+                            <td style="padding: 12px 8px;" data-i18n="trust_tab_p2">WhatsApp Cloud API Provider</td>
+                            <td style="padding: 12px 8px;">EU / Global</td>
                         </tr>
                         <tr style="border-bottom: 1px solid var(--border-color);">
-                            <td style="padding: 12px 8px; color: var(--text-primary); font-weight: 500;" data-i18n="priv_tab_d3">Billing Tokens</td>
-                            <td style="padding: 12px 8px;" data-i18n="priv_tab_p3">Invoicing</td>
-                            <td style="padding: 12px 8px;" data-i18n="priv_tab_r3">Statutory (Up to 7 years)</td>
+                            <td style="padding: 12px 8px;">OpenAI Ireland Ltd.</td>
+                            <td style="padding: 12px 8px;" data-i18n="trust_tab_p3">Vision Extraction Models (Zero Retention API)</td>
+                            <td style="padding: 12px 8px;">EU (Ireland)</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-
-            <h3 style="margin-top: 32px;" data-i18n="priv_h3">3. How We Use Data</h3>
-            <p data-i18n="priv_p3_1">We use incoming data solely to provide real-time location intelligence.</p>
-            <p data-i18n="priv_p3_2">We absolutely never use your proprietary delivery data to train our core foundation models.</p>
-
-            <h3 style="margin-top: 32px;" data-i18n="priv_h4">4. Data Sharing & Third Parties</h3>
-            <p data-i18n="priv_p4_1">We never sell your data. We rely on enterprise-grade EU infrastructure providers bound by strict DPA agreements.</p>
-            <p style="margin-top: 16px;">
-                <a href="/trust" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;" data-i18n="priv_trust_link">View our Trust Center for Data Processing Agreements (DPA) and Subprocessor list &rarr;</a>
-            </p>
-
-            <h3 style="margin-top: 32px;" data-i18n="priv_h5">5. International Rights</h3>
-            <p data-i18n="priv_p5_1">As an EU-based infrastructure company, all our users globally benefit from strict GDPR-level privacy protections.</p>
-
-            <h3 style="margin-top: 32px;" data-i18n="priv_h6">6. Data Controller & Contact</h3>
-            <p data-i18n="priv_p6_1" style="margin-bottom: 8px;">The entity responsible for processing your data is ThinkPoint OÜ.</p>
-            <p style="color: var(--text-secondary);" data-i18n="priv_p6_2">
-                Registry Code: 17131887 | Narva mnt 5, Tallinn 10117, Estonia | legal@thinkpoint.ee
+            <p style="margin-top: 16px; font-size: 0.85rem; color: var(--text-secondary);" data-i18n="trust_sub_note">
+                * Locy uses Enterprise Vision APIs with zero data training configurations.
             </p>
         </div>
     </section>
+
 
     <!-- Footer -->
     <footer>
