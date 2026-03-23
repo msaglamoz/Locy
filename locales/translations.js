@@ -418,7 +418,7 @@ const LocyTranslations = {
     "hero_check_api": "Kurumsal API",
     "hero_check_uptime": "%99.9 Uptime",
     "demo_badge": "CANLI DEMO",
-    "demo_title": "Canl\u0131 Test Ekran\u0131.",
+    "demo_title": "Demo Makinesi.",
     "demo_desc": "Hızı deneyimleyin. Doğrudan demo sunucumuza bağlanmak için QR kodunu tarayın. Herhangi bir adresin fotoğrafını gönderin. Sonucu anında alın.",
     "demo_scan": "Demoyu başlatmak için tara",
     "demo_or_web": "Veya WhatsApp Web'i aç",
