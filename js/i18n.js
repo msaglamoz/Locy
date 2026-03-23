@@ -44,6 +44,22 @@ document.addEventListener("DOMContentLoaded", () => {
         
         // Update document lang attribute
         document.documentElement.lang = lang;
+
+        // Update Custom Dropdown
+        const langInfo = {
+            'en': { name: 'English', short: 'EN', flag: 'gb.png' },
+            'tr': { name: 'Türkçe', short: 'TR', flag: 'tr.png' },
+            'de': { name: 'Deutsch', short: 'DE', flag: 'de.png' },
+            'fr': { name: 'Français', short: 'FR', flag: 'fr.png' },
+            'es': { name: 'Español', short: 'ES', flag: 'es.png' },
+            'et': { name: 'Eesti', short: 'EE', flag: 'ee.png' },
+            'it': { name: 'Italiano', short: 'IT', flag: 'it.png' }
+        };
+        const current = langInfo[lang] || langInfo['en'];
+        document.querySelectorAll('.current-lang-short').forEach(el => el.innerText = current.short);
+        document.querySelectorAll('.current-lang-long').forEach(el => el.innerText = current.name);
+        document.querySelectorAll('.current-lang-flag').forEach(el => el.src = 'https://flagcdn.com/w20/' + current.flag);
+
     }
 
     // Initial apply

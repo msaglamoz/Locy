@@ -35,15 +35,21 @@
                 <li><a href="/product" data-i18n="nav_product">Product</a></li>
                 <li><a href="/pricing" data-i18n="nav_pricing">Pricing</a></li>
                 <li>
-                    <select class="language-switcher" aria-label="Language" style="margin-left: 10px; font-size: 14px;">
-                        <option value="de">🇩🇪 DE</option>
-                        <option value="et">🇪🇪 EE</option>
-                        <option value="en">🇬🇧 EN</option>
-                        <option value="es">🇪🇸 ES</option>
-                        <option value="fr">🇫🇷 FR</option>
-                        <option value="it">🇮🇹 IT</option>
-                        <option value="tr">🇹🇷 TR</option>
-                    </select>
+                    <div class="dropdown" style="margin-left: 10px;">
+    <a href="#" class="dropbtn" style="display: flex; align-items: center; gap: 6px; font-size: 14px; text-decoration: none; padding: 4px 8px; color: var(--text-primary); font-weight: 500;">
+        <img src="https://flagcdn.com/w20/gb.png" width="16" alt="Flag" class="current-lang-flag" style="border-radius:2px;">
+        <span class="current-lang-short">EN</span>
+    </a>
+    <div class="dropdown-content" style="min-width: 140px; font-size: 14px;">
+        <a href="javascript:void(0)" onclick="window.locyChangeLanguage('de');"><img src="https://flagcdn.com/w20/de.png" width="16" style="margin-right: 8px; vertical-align: middle; border-radius:2px;"> Deutsch</a>
+        <a href="javascript:void(0)" onclick="window.locyChangeLanguage('et');"><img src="https://flagcdn.com/w20/ee.png" width="16" style="margin-right: 8px; vertical-align: middle; border-radius:2px;"> Eesti</a>
+        <a href="javascript:void(0)" onclick="window.locyChangeLanguage('en');"><img src="https://flagcdn.com/w20/gb.png" width="16" style="margin-right: 8px; vertical-align: middle; border-radius:2px;"> English</a>
+        <a href="javascript:void(0)" onclick="window.locyChangeLanguage('es');"><img src="https://flagcdn.com/w20/es.png" width="16" style="margin-right: 8px; vertical-align: middle; border-radius:2px;"> Español</a>
+        <a href="javascript:void(0)" onclick="window.locyChangeLanguage('fr');"><img src="https://flagcdn.com/w20/fr.png" width="16" style="margin-right: 8px; vertical-align: middle; border-radius:2px;"> Français</a>
+        <a href="javascript:void(0)" onclick="window.locyChangeLanguage('it');"><img src="https://flagcdn.com/w20/it.png" width="16" style="margin-right: 8px; vertical-align: middle; border-radius:2px;"> Italiano</a>
+        <a href="javascript:void(0)" onclick="window.locyChangeLanguage('tr');"><img src="https://flagcdn.com/w20/tr.png" width="16" style="margin-right: 8px; vertical-align: middle; border-radius:2px;"> Türkçe</a>
+    </div>
+</div>
                 </li>
             </ul>
 
@@ -68,15 +74,21 @@
             <a href="/company" class="mobile-nav-link" data-i18n="nav_company">Company</a>
             <a href="https://wa.me/message/2VAKQKH7ZNS3D1" class="mobile-nav-link" data-i18n="nav_contact">Contact</a>
             
-            <select class="language-switcher" aria-label="Language" style="margin-top: 10px; width: 140px; padding: 8px; font-size: 14px; background: var(--bg-surface); color: var(--text-primary); border: 1px solid var(--border-color); border-radius: 4px;">
-                <option value="de">🇩🇪 Deutsch</option>
-                <option value="et">🇪🇪 Eesti</option>
-                <option value="en">🇬🇧 English</option>
-                <option value="es">🇪🇸 Español</option>
-                <option value="fr">🇫🇷 Français</option>
-                <option value="it">🇮🇹 Italiano</option>
-                <option value="tr">🇹🇷 Türkçe</option>
-            </select>
+            <div class="dropdown" style="margin-top: 10px;">
+    <a href="#" class="dropbtn" style="display: flex; align-items: center; gap: 6px; font-size: 14px; text-decoration: none; padding: 10px; border: 1px solid var(--border-color); border-radius: 4px; color: var(--text-primary); font-weight: 500;">
+        <img src="https://flagcdn.com/w20/gb.png" width="16" alt="Flag" class="current-lang-flag" style="border-radius:2px;">
+        <span class="current-lang-long">English</span>
+    </a>
+    <div class="dropdown-content" style="min-width: 140px; font-size: 14px; bottom: 100%; top: auto; margin-bottom: 5px;">
+        <a href="javascript:void(0)" onclick="window.locyChangeLanguage('de');"><img src="https://flagcdn.com/w20/de.png" width="16" style="margin-right: 8px; vertical-align: middle; border-radius:2px;"> Deutsch</a>
+        <a href="javascript:void(0)" onclick="window.locyChangeLanguage('et');"><img src="https://flagcdn.com/w20/ee.png" width="16" style="margin-right: 8px; vertical-align: middle; border-radius:2px;"> Eesti</a>
+        <a href="javascript:void(0)" onclick="window.locyChangeLanguage('en');"><img src="https://flagcdn.com/w20/gb.png" width="16" style="margin-right: 8px; vertical-align: middle; border-radius:2px;"> English</a>
+        <a href="javascript:void(0)" onclick="window.locyChangeLanguage('es');"><img src="https://flagcdn.com/w20/es.png" width="16" style="margin-right: 8px; vertical-align: middle; border-radius:2px;"> Español</a>
+        <a href="javascript:void(0)" onclick="window.locyChangeLanguage('fr');"><img src="https://flagcdn.com/w20/fr.png" width="16" style="margin-right: 8px; vertical-align: middle; border-radius:2px;"> Français</a>
+        <a href="javascript:void(0)" onclick="window.locyChangeLanguage('it');"><img src="https://flagcdn.com/w20/it.png" width="16" style="margin-right: 8px; vertical-align: middle; border-radius:2px;"> Italiano</a>
+        <a href="javascript:void(0)" onclick="window.locyChangeLanguage('tr');"><img src="https://flagcdn.com/w20/tr.png" width="16" style="margin-right: 8px; vertical-align: middle; border-radius:2px;"> Türkçe</a>
+    </div>
+</div>
         </div>
     </div>
 
