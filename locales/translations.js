@@ -386,7 +386,7 @@ const LocyTranslations = {
     "priv_tab_r3": "Yasal Süre (7 yıla kadar)",
     "priv_trust_link": "DPA ve Alt İşleyen listesi için Trust Center (Güven Merkezi) sayfamızı ziyaret edin &rarr;",
     
-    "trust_title": "Güven Merkezi (Trust Center)",
+    "trust_title": "Güven Merkezi",
     "trust_desc": "Kurumsal düzeyde güvenlik, uyumluluk ve şeffaflık.",
     "trust_dpa_title": "Veri İşleme Sözleşmesi (DPA)",
     "trust_dpa_desc": "Standart DPA'mız GDPR ve standart sözleşme maddelerine (SCC) uygundur. İhale ekibiniz için ıslak imzalı kopyasını talep edebilirsiniz.",
